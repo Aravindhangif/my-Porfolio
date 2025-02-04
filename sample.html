@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      overflow-x: hidden;
+    }
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #60a5fa;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 1rem auto;
+      max-width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .moving {
+      animation: float 3s infinite;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aravindhan S</h1>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <section id="summary">
+    <h2>Summary</h2>
+    <div class="card">
+      <p>A motivated software developer skilled in Java, OOP, DSA, and MERN stack development (MongoDB, Express.js, React.js, Node.js) for building scalable web applications.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card moving">
+      <h3>Project Collaboration Tool</h3>
+      <p>MERN stack platform for team collaboration with real-time updates.</p>
+    </div>
+    <div class="card">
+      <h3>GymPro</h3>
+      <p>Web application for gym membership and service management using PHP and MySQL.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul style="text-align: left;">
+        <li>Programming: Java, C</li>
+        <li>Web Development: HTML, CSS, JavaScript, React.js, Node.js</li>
+        <li>Databases: MongoDB</li>
+        <li>DSA, GitHub, Advanced Excel</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>MCA</h3>
+      <p>Sri Manakula Vinayagar Engineering College, Pondicherry</p>
+      <p>2023 - Present</p>
+    </div>
+    <div class="card">
+      <h3>B.Com</h3>
+      <p>Sri Manakula Vinayagar Engineering College, Pondicherry</p>
+      <p>2020 - 2023</p>
+    </div>
+  </section>
+</body>
+</html>
